@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Employee_Dashboard</title>
 </head>
 <body>
-    
+    <div id="container">
+        <h1>Hire a New Employee</h1>
+        <form>
+           <input type="text" placeholder="Employee Name" id="empname">
+           <select id="jobrole">
+            <option value>Select Job Role</option>
+            <option value="SDE1">SDE1</option>
+            <option value="SDE2">SDE2</option>
+            <option value="HR Manager">HR Manager</option>
+            <option value="SEO Speacialist">SEO Speacialist</option>
+            <option value="CA">CA</option>
+           </select>
+           <select id="depart">
+            <option value>Select Department</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Manager">Manager</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Finance">Finance</option>
+           </select>
+           <input type="number" placeholder="Monthly Salary" id="salary">
+           <input type="number" placeholder="experience in years" id="exp">
+           <input type="email" placeholder="Email" id="email">
+         <input type="submit" value="HIRE"> 
+        </form>
+    </div>
+    <h1>Total Active Employee : 
+        <span id="totalemp">0</span>
+    </h1>
+    <h1>Total Cost In Salary : 
+        <span id="totalsal">0</span>
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Employee Name</th>
+                <th>Job Role</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Contact Email</th>
+                <th>Work Experience</th>
+                <th>Role Type</th>
+                <th>Fire Employee</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
 </body>
 </html>
+<script src="index.js"></script>
